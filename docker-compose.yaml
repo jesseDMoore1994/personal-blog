@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  web:
+    image: spurin/hexo
+    environment:
+        - HEXO_SERVER_PORT=4000
+        - GIT_USER="Jesse Moore"
+        - GIT_EMAIL="jaymen1994@hotmail.com"
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./domain.com:/app
